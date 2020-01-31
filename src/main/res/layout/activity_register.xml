@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/RegisterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="@string/Register"
+        android:textSize="36dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/titleid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ID"
+        app:layout_constraintBottom_toBottomOf="@id/useridR"
+        app:layout_constraintLeft_toLeftOf="@id/RegisterTitle"
+        android:textSize="24dp"
+        android:layout_marginLeft="60dp" />
+    <EditText
+        android:id="@+id/useridR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/invalid_username"
+        app:layout_constraintTop_toBottomOf="@+id/RegisterTitle"
+        app:layout_constraintLeft_toRightOf="@id/titleid"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="24dp"
+        style="@style/RegisterRule"/>
+
+    <TextView
+        android:id="@+id/titlepassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PassWord"
+
+        app:layout_constraintLeft_toLeftOf="@id/titleid"
+        app:layout_constraintBottom_toBottomOf="@id/passwordR"
+        android:textSize="24dp" />
+    <EditText
+        android:id="@+id/passwordR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/PassWord"
+        app:layout_constraintTop_toBottomOf="@id/useridR"
+        app:layout_constraintLeft_toLeftOf="@id/useridR"
+        app:layout_constraintRight_toRightOf="@id/useridR"
+        android:layout_marginTop="24dp"
+        style="@style/RegisterRule"/>
+    <TextView
+        android:id="@+id/titlename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/User_Name"
+
+        app:layout_constraintLeft_toLeftOf="@id/titlepassword"
+        app:layout_constraintBottom_toBottomOf="@id/nameR"
+        android:textSize="24dp" />
+    <EditText
+        android:id="@+id/nameR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/User_Name"
+        app:layout_constraintTop_toBottomOf="@id/passwordR"
+        app:layout_constraintLeft_toLeftOf="@id/passwordR"
+        app:layout_constraintRight_toRightOf="@id/passwordR"
+        android:layout_marginTop="24dp"
+        style="@style/RegisterRule"/>
+    <TextView
+        android:id="@+id/titlebirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/User_Birthday"
+        app:layout_constraintLeft_toLeftOf="@id/titlename"
+        app:layout_constraintBottom_toBottomOf="@id/birthdayR"
+        android:textSize="24dp" />
+    <EditText
+        android:id="@+id/birthdayR"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/User_Birthday"
+        app:layout_constraintTop_toBottomOf="@id/nameR"
+        app:layout_constraintLeft_toLeftOf="@id/nameR"
+        app:layout_constraintRight_toRightOf="@id/nameR"
+        android:layout_marginTop="24dp"
+        style="@style/RegisterRule"/>
+
+    <Button
+        android:id="@+id/RegisterGo"
+        android:text="@string/RegisterGO"
+        app:layout_constraintTop_toBottomOf="@id/birthdayR"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="48dp"
+        style="@style/ButtonSetting" />
+
+    <Button
+        android:id="@+id/BacktoLogin"
+        android:text="@string/BacktoLogin"
+        app:layout_constraintTop_toBottomOf="@id/RegisterGo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        style="@style/ButtonSetting"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

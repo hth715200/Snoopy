@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         if (dir != null) {
         } else {
             dir = Environment.getRootDirectory().getAbsolutePath();
+//            dir = Environment.getExternalStorageDirectory().getCanonicalPath();
         }
         Log.e("Message","第一次的dir路径"+dir);
 
@@ -89,8 +90,6 @@ public class MainActivity extends AppCompatActivity {
         finish();
 
     }
-
-
 
     public class MyOnClickListener implements View.OnClickListener{
         public final Context context;

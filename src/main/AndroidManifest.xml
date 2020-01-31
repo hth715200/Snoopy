@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.filereview">
-    <!-- 允许当前应用程序读取SD卡文件 -->
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许当前应用程序读取SD卡文件 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PROFILE" /> <!-- 允许当前程序向SD卡写入数据 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -14,19 +16,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".UserMessageActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
         <activity
-            android:name=".ui.login.LoginActivity"
-            android:label="@string/title_activity_login"></activity>
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/activity_main"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:name=".HomeActivity"
+            android:label="@string/title_activity_home">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>
