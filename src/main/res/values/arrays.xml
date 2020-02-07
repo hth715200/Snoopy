@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_title">
+        <item>朋友圈</item>
+        <item>扫一扫</item>
+        <item>摇一摇</item>
+        <item>看一看</item>
+        <item>搜一搜</item>
+        <item>附近的人</item>
+        <item>购物</item>
+        <item>游戏</item>
+        <item>小程序</item>
+    </string-array>
+
+    <string-array name="find_icon">
+        <item>@drawable/wechat_find_icon_1</item>
+        <item>@drawable/wechat_find_icon_1</item>
+        <item>@drawable/wechat_find_icon_1</item>
+        <item>@drawable/wechat_find_icon_1</item>
+        <item>@drawable/wechat_find_icon_1</item>
+        <item>@drawable/wechat_find_icon_1</item>
+        <item>@drawable/wechat_find_icon_1</item>
+        <item>@drawable/wechat_find_icon_1</item>
+        <item>@drawable/wechat_find_icon_1</item>
+
+
+    </string-array>
+</resources>

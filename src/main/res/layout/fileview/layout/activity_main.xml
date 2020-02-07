@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fitsSystemWindows="true"
+    android:id="@+id/mainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00BCD4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00BCD4"
+                android:src="?attr/actionModeCloseDrawable"
+                android:onClick="Button1onClick"/>
+
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00BCD4"
+                android:src="@android:drawable/btn_dialog"
+                tools:src="@android:drawable/btn_dialog" />
+
+            <TextView
+                android:id="@+id/file_manager"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/title"
+                android:textAllCaps="false"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="30sp"
+                android:textStyle="bold|italic"
+                android:typeface="normal" />
+
+            <ImageButton
+                android:id="@+id/expanded_menu"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00BCD4"
+                android:src="@android:drawable/ic_menu_add"
+                tools:src="@android:drawable/ic_menu_add" />
+
+            <ImageButton
+                android:id="@+id/share"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00BCD4"
+                android:src="?attr/actionModeShareDrawable" />
+
+        </LinearLayout>
+
+
+        <!--        <androidx.appcompat.widget.Toolbar-->
+        <!--            android:id="@+id/toolbar"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="?attr/actionBarSize"-->
+        <!--            app:navigationIcon="?attr/actionModeCloseDrawable"-->
+        <!--            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">-->
+
+        <!--            <TextView-->
+        <!--                android:id="@+id/filemanager"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:text="@string/title"-->
+        <!--                android:gravity="fill_vertical|center_horizontal"-->
+        <!--                android:textStyle="bold"-->
+        <!--                android:textColor="@android:color/holo_orange_light"-->
+        <!--                android:textSize="24dp"/>-->
+
+
+        <!--        </androidx.appcompat.widget.Toolbar>-->
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include layout="@layout/content_main" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

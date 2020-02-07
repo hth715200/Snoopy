@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMessageActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="195dp" />
+
+    <TextView
+        android:id="@+id/text_notifications"
+        android:text="Notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/notification1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_notifications"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="64dp"
+        android:text="@string/ID"
+        style="@style/NotificationTextView"/>
+    <TextView
+        android:id="@+id/displayid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="@id/notification1"
+        android:layout_marginLeft="50dp"
+        style="@style/NotificationTextView"/>
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2px"
+        android:background="@android:color/background_dark"
+        app:layout_constraintTop_toBottomOf="@id/notification1"
+        app:layout_constraintLeft_toLeftOf="@id/notification1"/>
+
+    <TextView
+        android:id="@+id/notification2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/notification1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/PassWord"
+        style="@style/NotificationTextView"/>
+    <TextView
+        android:id="@+id/displaypassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="@id/notification2"
+        android:layout_marginLeft="50dp"
+        style="@style/NotificationTextView"/>
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2px"
+        android:background="@android:color/background_dark"
+        app:layout_constraintTop_toBottomOf="@id/notification2"
+        app:layout_constraintLeft_toLeftOf="@id/notification1"/>
+    <TextView
+        android:id="@+id/notification3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/notification2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/User_Name"
+        style="@style/NotificationTextView"/>
+    <TextView
+        android:id="@+id/displayname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="@id/notification3"
+        android:layout_marginLeft="50dp"
+        style="@style/NotificationTextView"/>
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2px"
+        android:background="@android:color/background_dark"
+        app:layout_constraintTop_toBottomOf="@id/notification3"
+        app:layout_constraintLeft_toLeftOf="@id/notification1"/>
+    <TextView
+        android:id="@+id/notification4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/notification3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/User_Birthday"
+        style="@style/NotificationTextView"/>
+    <TextView
+        android:id="@+id/displaybirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="@id/notification4"
+        android:layout_marginLeft="50dp"
+        style="@style/NotificationTextView"/>
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2px"
+        android:background="@android:color/background_dark"
+        app:layout_constraintTop_toBottomOf="@id/notification4"
+        app:layout_constraintLeft_toLeftOf="@id/notification1"/>
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/notification4"
+        android:layout_marginTop="70dp"
+        android:textSize="36dp"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/backtoHome"
+        android:text="@string/BackToHome"
+        app:layout_constraintTop_toBottomOf="@+id/welcome"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="36dp"
+        style="@style/ButtonSetting" />
+    <Button
+        android:id="@+id/change"
+        android:text="@string/Change"
+        app:layout_constraintTop_toBottomOf="@id/backtoHome"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="24dp"
+        style="@style/ButtonSetting"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

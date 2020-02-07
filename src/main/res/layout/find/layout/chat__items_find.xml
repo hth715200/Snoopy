@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/txt_rectborder">
+
+    <ImageView
+        android:id="@+id/find_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_vertical"
+        android:baselineAlignBottom="true"
+        app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+    <TextView
+        android:id="@+id/find_category"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="24dp"
+        android:paddingLeft="8dp"
+        android:text="cfevefece"/>
+
+    <ImageView
+        android:id="@+id/find_user_icon"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_vertical"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+</LinearLayout>

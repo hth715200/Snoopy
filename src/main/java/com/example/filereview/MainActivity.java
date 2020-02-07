@@ -54,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
 //        });
 
 
-
         myOnClickListener = new MyOnClickListener(this);
 
         //接受下一个页面传来的的intent，（在本Activity中完成进入下一层文件的操作）

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ToolbarPopupThemev21" parent="AppTheme">
+        <item name="actionOverflowButtonStyle">@android:drawable/ic_input_add</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:colorBackground">#90302323</item>
+        <item name="android:textColor">#F0ECEC</item>
+        <item name="android:textColorPrimary">@android:color/background_dark</item>
+    </style>
+
+
+</resources>
